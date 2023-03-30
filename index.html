@@ -22,7 +22,7 @@
                     <b>ELEIÇÕES<br>ALFREDO NUNES</b> 
                 </div>
                 <div class="preto">
-                    <button class="bnt click" onclick="forcaJovem(1)">1</button>
+                    <button class="bnt click" onclick="inserir(1)">1</button>
                     <button class="bnt click" onclick="inserir(2)">2</button>
                     <button class="bnt click" onclick="inserir(3)">3</button>
                     <button class="bnt click" onclick="inserir(4)">4</button>
@@ -33,13 +33,13 @@
                     <button class="bnt click" onclick="inserir(9)">9</button>
                     <button class="bnt click" onclick="inserir(0)">0</button>
                     <div class="teclado2">
-                        <button class="branco  click">BRANCO</button>
-                        <button class="laranja  click">CORRIGE</button>
-                        <button class="verde">CONFIRMA</button>
+                        <button class="branco"  onclick="votoBranco()">BRANCO</button>
+                        <button class="laranja"  onclick="limpa()">CORRIGE</button>
+                        <button class="verde" onclick="votar()">CONFIRMA</button>
                     </div>
                 </div>
             </div>
-            <button class="resultado"><a href="resultado.html" target="_blank">Resultado</a></button>
+            <button class="resultado"><a href="resultado.html" target="_blank" onclick="resultado()">Resultado</a></button>
         </div> 
        
     </body>
