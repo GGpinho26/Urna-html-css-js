@@ -1,8 +1,9 @@
 let nulos = 0;
-let num_chapa01 = "11";
-let num_chapa02 = "45";
+let num_chapa01 = "01";
+let num_chapa02 = "02";
 let vt_chapa1 = 0;
 let vt_chapa2 = 0;
+const senha = "0000";
 
 
 function inserir(value) {
@@ -30,11 +31,11 @@ function votar() {
     } else {
         comp = ""+document.getElementById("campo1").value+document.getElementById("campo2").value;
         if(comp == num_chapa01) {
-            alert("Voto Contabilizado! (11)");
+            alert("Voto Contabilizado! (Força Jovem)");
             vt_chapa1+=1;
             limpa();
         } else if(comp == num_chapa02) {
-            alert("Voto Contabilizado! (45)");
+            alert("Voto Contabilizado! (Lideres do amanhã)");
             vt_chapa2+=1;
             limpa();
         } else {
@@ -52,5 +53,11 @@ function limpa() {
 }
 
 function resultado() {
-    alert("Voltos nulos: "+nulos+"\nVotos Chapa "+num_chapa01+": "+vt_chapa1+"\nVotos Chapa "+num_chapa02+": "+vt_chapa2);
+    const SenhaDigitada = prompt("Digite a senha:")
+    if (SenhaDigitada === senha){
+        alert("Votos nulos: "+nulos+"\nVotos Chapa, Força Jovem "+": "+vt_chapa1+"\nVotos Chapa, Líderes do amanhã"+": "+vt_chapa2);
+    } else {
+        alert("Você não é a Luiza");
+    }
+    
 }

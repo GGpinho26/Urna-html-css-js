@@ -1,18 +1,29 @@
-.container{
-  text-align: center;
-  background-color: #e1e1e1;
-  height: 100%;
+* {
   width: 100%;
-  position: absolute;
+  height: 100vh;
+  overflow: hidden;
 }
-img{
+
+.container {
+  position: absolute;
+  text-align: center;
+  left: -10px;
+  top: -10px;
+  width: 110%;
+  height: 110vh;
+
+  background: linear-gradient(359.53deg, #006C04 0.21%, #E8EFE6 66.07%);
+}
+
+img {
   right: 0;
   position: absolute;
   height: 150px;
   width: 105px;
   border: solid 1px black;
 }
-.cinzaEscuro{
+
+.cinzaEscuro {
   top: 50%;
   margin-top: -200px;
   width: 265px;
@@ -20,36 +31,46 @@ img{
   left: 820px;
   position: absolute;
 }
-b{
+
+b {
   position: relative;
   top: 10px;
 }
-.preto{
-  border: solid 2px;
-  top: 310px;
-  margin-top: -135px;
-  position: relative;
-  background-color: #444;
+
+.preto {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 264px;
   height: 300px;
-  width: 260px;
   left: 820px;
+  top: 250px;
+
+  background: rgba(30, 30, 30, 0.87);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.cinzaClaro{
+
+.cinzaClaro {
+  box-sizing: border-box;
+
   position: absolute;
-  border: solid 1px;
-  left: 50%;
-  margin-left: -370px;
-  top: 50%;
-  margin-top: -190px;
-  position: absolute;
-  height: 350px;
-  width: 500px;
-  background-color: snow;
+  width: 600px;
+  height: 365px;
+  left: 200px;
+  top: 185px;
+  text-align: center;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.cinzaEscuro{
+
+.cinzaEscuro {
   background-color: #b6b5b5;
 }
-.bnt{
+
+.bnt {
   margin: 10px;
   background-color: black;
   color: snow;
@@ -57,55 +78,65 @@ b{
   height: 30px;
   width: 50px;
 }
-.teclado2{
+
+.teclado2 {
   font-size: 11px;
-  position: absolute;
-  bottom: 20px;
+  position: relative;
+  bottom: -30px;
   left: 5px;
   color: black;
 }
-.branco{
+
+.branco {
   height: 40px;
   width: 75px;
 }
-.laranja{
+
+.laranja {
   height: 40px;
   width: 75px;
   background-color: #E67401;
 }
-.verde{
+
+.verde {
   height: 40px;
   width: 90px;
   background-color: green;
 }
 
-.resultado{
-    position: relative;
-    height: 40px;
-    width: 120px;
-    top: 140px;
-    left: 270px;
-    background-color: #6DE734;
+.resultado {
+  position: relative;
+  height: 40px;
+  width: 120px;
+  top: 80px;
+  left: 270px;
+  background-color: #6DE734;
 }
 
-.input{
-    position: relative;
-    top: 60px;
-    height: 50px;
-    width: 50px;
+.input1 {
+  position: absolute;
+  left: 230px;
+  top: 90px;
+  height: 50px;
+  width: 50px;
 
-    font-size: 30px;
-    font-weight: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 
-.numer{
-    position: relative;
-    top: 40px;
+
+.input2 {
+  position: absolute;
+  left: 300px;
+  top: 90px;
+  height: 50px;
+  width: 50px;
+
+  font-size: 30px;
+  font-weight: 700;
 }
 
-.voltar{
-    position: absolute;
-    height: 40px;
-    width: 100px;
-    background-color: #6DE734;
+.numer {
+  position: relative;
+  top: 40px;
 }
